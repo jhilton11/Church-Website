@@ -1,0 +1,40 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>UMCA App Website</title>
+<link rel="stylesheet" type="text/css" href="main.css">     
+<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+<script src="member.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBTOzmtqqYQoG54wrjmakZmbquFREmKsYw",
+    authDomain: "umca-app.firebaseapp.com",
+    databaseURL: "https://umca-app.firebaseio.com",
+    projectId: "umca-app",
+    storageBucket: "umca-app.appspot.com",
+    messagingSenderId: "966119952062"
+  };
+  firebase.initializeApp(config);
+</script>
+    </head>
+
+    <div>
+        <form id = "myform">
+            <img width="200" height="150" id="output">
+            <p><input id="file" type="file" accept="image/*" onchange="loadFile(event)"></p>
+            <p><label>Name: </label><input type="text" name="name" required="required" id="name"></p>
+            <p><label>Area Of Ministry: </label><input type="text" name="areaOfMinistry" required="required" id="areaOfMinistry"></p>
+            <p><label>Phone No: </label><input type="tel" name="phoneNo" required="required" id="phoneNo"></p>
+            <p><label>Email: </label><input type="email" name="email" required="required" id="email"></p>
+            <p><label>Birthday: </label><input type="text" name="birthday" required="required" id="birthday"></p>
+            <p><input type="button" onclick="uploadData()" name="submit" value="Submit"></p>
+            <script>
+                    var loadFile = function(event) {
+                    var output = document.getElementById('output');
+                    output.src = URL.createObjectURL(event.target.files[0]);
+                    };
+                </script>
+        </form>
+    </div>
+</html>
