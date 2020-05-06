@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
       </head>
 
@@ -16,37 +17,20 @@
         </header>
 
         <div class="w-100 headmast" style="height: 100vh;">
-            <div class="col-sm p-2">
-              <img src="https://homepages.cae.wisc.edu/~ece533/images/airplane.png" alt="Los Angeles" width="50px" height="50px">
-            </div>
-
-            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent sticky-top">
+            
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent sticky-top py-5">
               <a class="navbar-brand" href="#">Navbar</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
             
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto float-right">
+                <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Messages</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" data-value="messages" href="#">Messages</a>
                   </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -57,96 +41,166 @@
             </nav>
 
             <!-- Main-Content -->
-            <div class="jumbotron bg-transparent text-white">
-                <h3 class="align-self-center text-center">Come and find Jesus</h3>
+            <div class="row text-center h-50">
+                <div class="align-self-center col-sm-12 text-white">
+                  <h2 class="mb-5 display-4">Welcome to Great Commission Bible Church</h2>
+                  <h4 class="text-center text-muted"> Imperfect people, risking it all to make Jesus real one life at a time</h4>
+                  <button class="btn btn-outline-success text-white">Learn More</button>
+                </div>
             </div>
         </div>
 
-        <!-- <section class="py-5 bg-light">
-          <div class="container">
-              <h3 class="text-center text-white">Latest Sermon</h3>
-              <div class="row justify-content-center">
-                <audio controls width = "1100px">
-                  <source src="">
+        <section class="py-3" style="background-color: plum;">
+          <div class="container text-white">
+              <h3 class="text-center">Latest Message</h3>
+              <div class="row justify-content-center w-100">
+                <audio controls>
+                  <source src="audio/745_Podcast.mp3">
                 </audio controls>
               </div>
               <p class="text-center text-white">Title: Signs of the Times by Rev. Lanre Ojo</p>
               <script>function click() {
                 alert("Hello");
               }</script>
-              <a href="" onclick="click()">
-                <p class="text-center">Click to see previous sermons</p>
+              <a href="javascript:click()">
+                <p class="text-center text-white">Click to see previous sermons</p>
               </a>
           </div>
-        </section class="py-5"> -->
-
-        <section class="py-5">
-          <div class="container">
-            <h3 class="text-center text-danger">About Us</h3>
-            <p class="text-center">Mission statement 1</p>
-            <p class="text-center">Mission statement 1</p>
-            <p class="text-center">Mission statement 1</p>
-            <p class="text-center">Mission statement 1</p>
-            <p class="text-center">Mission statement 1</p>
-          </div>
         </section>
 
-        <section class="py-5">
-          <div class="container my-4">
-                <h3 class="text-center text-danger">Recent Events</h3>
-                <div class="row justify-content-center">
-                  <div class="col-sm-4">
-                    <h4 class="text-center">Event 1</h4>
-                  </div>
-                  <div class="col-sm-4">
-                    <h4 class="text-center">Event 2</h4>
-                  </div>
-                  <div class="col-sm-4">
-                    <h4 class="text-center">Event 3</h4>
-                    <div class="card">
-                      <div class="card-body">
-                        <img src="" alt="img 1">
-                        <p>Event title</p>
-                      </div>
+        <!-- Message from the pastor -->
+        <section class="">
+            <div class="row m-5 justify-content-center">
+                <div class="col-sm-6">
+                    <div class="row justify-content-center">
+                      <img src="images/pastor.jpg" class="mr-3" style="height: 400px;">
                     </div>
-                  </div>
                 </div>
-          </div>
+
+                <div id="message" class="col-sm-6 align-items-center my-auto">
+                    <h4 class="mb-2">Message from the Pastor-in-charge</h4>
+                    <p class="text-justify font-weight-light">It is with great joy that I greet you as the 6th pastor of the historic Salem Missionary Baptist Church.  
+                      As many of you know, Salem is the oldest black church in Flatbush. It was my humble privilege to preside 
+                      over our church's centennial anniversary. Today we are 105 years old. We are in the midst a grand celebration 
+                      for our 105th anniversary as we only celebrate a church anniversary every five years.</p>
+                </div>
+            </div>
         </section>
 
-        <section id="section_videos" class="py-5">
-            <div class="container">
-                <h3 class="text-center text-danger">Recent Videos</h3>
+        <!-- Latest News -->
+        <section class="py-3">
+            <h3 class="text-muted text-center mb-4">Recent Events</h3>
+            <div class="row mx-2">
+                <div class="col-sm-4 text-center">
+                    <img class="mb-3" src="images/event-1.jpg" style="height: 200px;">
+                    <p>Crusade Program in Agbaja Area of Kogi State</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                  <img class="mb-3" src="images/event-2.png" style="height: 200px;">
+                  <p>Reaching out to students with the Word of God at Government Secondary Karara</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                  <img class="mb-3" src="images/event-3.jpg" style="height: 200px;">
+                  <p>Taking the Word of God to the Fulani Camp in Felele</p>
+                </div>
+                
             </div>
+        </section>
+
+        <section id="messages" class="py-3 bg-light">
+          <div class="row justify-content-center mr-3">
+             <div class="col-sm-4 text-center">
+                  <h3 class="m-2 text-muted">Weekly Services</h3>
+                  <table class="table text-left">
+                      <thead>
+                          
+                      </thead>
+
+                      <tbody>
+                          <tr>
+                              <td>Sunday</td>
+                              <td>Sunday Service</td>
+                              <td>9am - 11am</td>
+                          </tr>
+                          <tr>
+                            <td>Tuesday</td>
+                            <td>Bible Study</td>
+                            <td>5pm - 6:30pm</td>
+                          </tr>
+                          <tr>
+                            <td>Wednesday</td>
+                            <td>Prayer Meeting</td>
+                            <td>5pm - 6pm</td>
+                          </tr>
+                      </tbody>
+                  </table>
+             </div>
+
+             <div class="col-sm-4 text-center border-bottom ml-3">
+                  <h3 class="m-2 text-muted">Upcoming Events</h3>
+                  <table class="w-100 table table-striped text-left">
+                      <thead>
+                          <tr>
+    
+                              <th>Event</th>
+                              <th>Date</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              
+                              <td>Holy Ghost Conference</td>
+                              <td>21/04/2020</td>
+                          </tr>
+                          <tr>
+                            
+                            <td>Mission Outreach</td>
+                            <td>28/04/2020</td>
+                          </tr>
+                          <tr>
+                            
+                            <td>Begin the Month with the Lord</td>
+                            <td>21/04/2020</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <button class="btn btn-outline-success">Click to see all events</button>
+             </div>   
+          </div>
         </section>
     
-        <section class="bg-primary">
-          <div class="row justify-content-center py-3">
-            <div class="col-sm-4">
+        <section class="py-3" style="background-color: plum;">
+          <div class="row justify-content-center px-3">
+            <div class="col-sm-4 px-3">
               <h3 class="text-white text-center">Location</h3>
-              <p class="text-white text-center px-2">No. 123, Phase 2, Beside Arigbede College, Lokoja,
+              <p class="text-white text-center">No. 23, Beside NBS Filling Station, Ganaja Lokoja,
                 Kogi State.
               </p>
-              <p class="text-white text-center">Email: umcalokoja@gmail.com</p>
             </div>
 
             <div class="col-sm-4">
-              <h3 class="text-white text-center">Title</h3>
+              <h3 class="text-white text-center">Follow us on</h3>
+              <div class="text-center">
+                  <button class="btn btn-secondary"><i class="fa fa-facebook"></i></button>
+                  <button class="btn btn-secondary"><i class="fa fa-instagram"></i></button>
+                  <button class="btn btn-secondary"><i class="fa fa-twitter"></i></button>
+                  <button class="btn btn-secondary"><i class="fa fa-snapchat"></i></button>
+                  <button class="btn btn-secondary"><i class="fa fa-google-plus"></i></button>
+              </div>
             </div>
 
             <div class="col-sm-4">
               <h3 class="text-white text-center">Contact Us</h3>
-              <p class="text-white text-center">Email: umcalokoja@gmail.com</p>
-              <p class="text-white text-center">Phone: 08084532123</p>
-              <p class="text-white text-center">Email: umcalokoja@gmail.com</p>
-
+              <p class="text-white text-center">Email: greatcommissionchurch@gmail.com</p>
+              <p class="text-white text-center">Tel: 08084532123</p>
             </div>
           </div>
 
-            &copy; UMCA Lokoja 2020
+          <p class="text-center text-white text-muted">&copy; Great Commission Church 2020</p>
+
         </section>
         <script>
-          window.load = loadData();
+          window.load = scroll();
         </script>
 
         <!-- jQuery library -->
