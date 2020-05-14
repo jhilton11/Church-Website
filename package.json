@@ -1,0 +1,22 @@
+{
+  "name": "church-website",
+  "version": "1.0.0",
+  "description": "church website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhilton11/Church-Website.git"
+  },
+  "author": "Yinka Ige",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhilton11/UMCA-Website/issues"
+  },
+  "homepage": "https://github.com/jhilton11/UMCA-Website#readme",
+  "dependencies": {
+    "mongodb": "^3.5.7"
+  }
+}
